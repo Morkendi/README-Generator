@@ -1,3 +1,8 @@
+// Packages needed for this application
+const fs = require('fs');
+const inquirer = require('inquirer');
+const index = require('../index.js');
+
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -8,6 +13,8 @@ function renderLicenseBadge(license) {
   }
 }
 
+// Create a function that returns the license link
+// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
     return `https://choosealicense.com/licenses/${license}/`;
@@ -49,7 +56,7 @@ function generateMarkdown(data) {
   ## Test
   ${data.test}
   ## Questions
-  If you have any questions, please contact me at ${data.email}. You can also find more of my work at [${data.github}]
+  If you have any questions, please contact me at ${data.email}. You can also find more of my work at [https://github.com/${data.github}]
 `;
 }
 
