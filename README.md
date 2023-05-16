@@ -1,3 +1,18 @@
-# Professional README Generator Starter Code
+# README Generator
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+## Description
+
+
+## Usage
+
+## Mock Up
+![Image showing the resulting webpage](assets/Mock%20Up.png)
+
+--- 
+
+## Credits
+- Code by: Daniel Sanchez (https://github.com/Morkendi)
+- Starter Code by: TEC Bootcamp
+
+## Links
+- Link to 
