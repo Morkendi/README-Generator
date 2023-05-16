@@ -115,6 +115,7 @@ const questions =[
             },
         },
     ];
+
 // Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
@@ -133,6 +134,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-//exports
-module.exports = questions;
