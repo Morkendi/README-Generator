@@ -17,7 +17,10 @@ Once you run the previous command, a series of prompts will appear asking for in
 After all prompts are answered, a new `README.md` file is generated.
 
 ## Mock Up
-![Image showing the resulting webpage]()
+![Start of application in CLI](./Develop/images/Start.png)
+![Example of answered app](./Develop/images/Example.png)
+![Example of README generated with application](./Develop/images/README.png)
+![Preview of README](./Develop/images/preview.png)
 
 --- 
 
