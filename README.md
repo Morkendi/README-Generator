@@ -21,7 +21,7 @@ After all prompts are answered, a new `README.md` file is generated.
 ![Start of application in CLI](./Develop/images/Start.png)
 ![Example of answered app](./Develop/images/Example.png)
 ![Example of README generated with application](./Develop/images/README.png)
-![Preview of README](./Develop/images/preview.png)
+![Preview of README](./Develop/images/Preview.png)
 
 --- 
 
