@@ -16,8 +16,24 @@ function renderLicenseBadge(license) {
 // Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license) {
-    return `https://choosealicense.com/licenses/${license}/`;
+  if (license === 'AGPLv3') {
+    return `https://choosealicense.com/licenses/agpl-3.0/`;
+  } else if (license === 'GPLv3') {
+    return `https://choosealicense.com/licenses/gpl-3.0/`;
+  } else if (license === 'LGPLv3') {
+    return `https://choosealicense.com/licenses/lgpl-3.0/`;
+  } else if (license === 'MPL2.0') {
+    return `https://choosealicense.com/licenses/mpl-2.0/`;
+  } else if (license === 'Apache2.0') {
+    return `https://choosealicense.com/licenses/apache-2.0/`;
+  } else if (license === 'MIT') {
+    return `https://choosealicense.com/licenses/mit/`;
+  } else if (license === 'BSL1.0') {
+    return `https://choosealicense.com/licenses/bsl-1.0/`;
+  } else if (license === 'Unlicense') {
+    return `https://choosealicense.com/licenses/unlicense/`;
+  } else {
+    return ``;
   }
 }
 
@@ -25,7 +41,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `This project is licensed under the ${license} license.`;
+    return `This project is licensed under the '${license}' license.`;
   } else {
     return '';
   }
@@ -34,9 +50,13 @@ function renderLicenseSection(license) {
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
   ${renderLicenseBadge(data.license)}
+
   ## Description
+
   ${data.description}
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -44,19 +64,32 @@ function generateMarkdown(data) {
   * [Contribution](#contribution)
   * [Test](#test)
   * [Questions](#questions)
+
   ## Installation
+
   ${data.installation}
+
   ## Usage
+
   ${data.usage}
+
   ## License
+
   ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
+
+  [Read more](${renderLicenseLink(data.license)})
   ## Contribution
+
   ${data.contribution}
+
   ## Test
+
   ${data.test}
+
   ## Questions
-  If you have any questions, please contact me at ${data.email}. You can also find more of my work at [https://github.com/${data.github}]
+
+  If you have any questions, please contact me at ${data.email}. 
+  You can also find more of my work [here](https://github.com/${data.github})
 `;
 }
 

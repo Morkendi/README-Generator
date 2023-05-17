@@ -57,15 +57,8 @@ const questions =[
             type: 'list',
             name: 'license',
             message: 'Please select a license for your project.',
-            choices: ['GNU AGPLv3','GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'none'],
-            validate: (license) => { 
-                if (license) { 
-                    return true 
-                } else { 
-                    return 'Please select an option.' 
-                }
+            choices: ['AGPLv3','GPLv3', 'LGPLv3', 'MPL2.0', 'Apache2.0', 'MIT', 'BSL1.0', 'Unlicense',],
             },
-        },
         {
             type: 'input',
             name: 'contribution',
@@ -127,7 +120,6 @@ function init() {
     inquirer.prompt(questions)
         .then((data) => {
             writeToFile('README.md', generateMarkdown(data));
-            console.log(data)
         })
 }
 
