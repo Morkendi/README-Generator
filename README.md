@@ -30,3 +30,4 @@ After all prompts are answered, a new `README.md` file is generated.
 
 ## Links
 - Link to GitHub repo: (https://github.com/Morkendi/README-Generator)
+- Link to Video demo: (https://drive.google.com/file/d/1Y8gG6UEaPaG0PNkxROCmVh2ZDstP56hR/view?usp=share_link)
